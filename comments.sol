@@ -13,3 +13,4 @@ whatever is written here will be okay as long as you close the bracket
 you can also have multiple lines when using this way of writing comments
 */
 
+COMMENT
