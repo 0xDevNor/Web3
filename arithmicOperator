@@ -1,0 +1,100 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+// Aritmic Operators: + - / % ++ -- 
+// comparison operators: == (compared) 
+
+
+
+/*  An arithmetic operator is a symbol or function in programming that performs a mathematical operation such as 
+    addition, subtraction, multiplication, or division on two or more values, and produces a result. 
+    In programming languages, arithmetic operators are often represented by common mathematical symbols, 
+    such as the plus sign (+) for addition, minus sign (-) for subtraction, asterisk (*) for multiplication, 
+    and forward slash (/) for division. These operators can be used to manipulate numerical data in programs, 
+    and are a fundamental part of programming and computer science.*/
+    // Operands: Variables
+    // a + b 
+    // Operators: signs
+
+    // Identify the operators & operands used in this 
+    // Tom * wait = weekendFun
+    // answer: 
+    // Tom = operand
+    // * = operator 
+    // wait = operand 
+    // = to operator
+    // weekendfun = operand 
+
+contract Operators {
+    function calculator() public view returns (uint) {
+        uint a = 5;
+        uint b = 10;
+        uint result = a + b;
+        return result;
+    }
+
+    
+/* Denne koden er et Solidity smartkontrakt program som definerer en funksjon som heter "calculator". Funksjonen utfører en enkel matematisk operasjon ved hjelp av en aritmetisk operator kalt "addisjon".
+
+Addisjonsoperatoren "+" brukes til å legge sammen to verdier. I dette tilfellet legger vi sammen verdien "a" som er 5 og verdien "b" som er 10 ved å skrive koden "a + b" inne i funksjonen.
+
+Når funksjonen blir kalt, vil den returnere resultatet av denne matematiske operasjonen, som er summen av 5 og 10, altså 15.
+
+Så, kort sagt, denne koden utfører en enkel addisjonsoperasjon og returnerer resultatet.*/
+    function calculatorRemainder() public view returns (uint) {
+        uint a = 2;
+        uint b = 12;
+        uint result = a % b;
+        return result;
+    }
+    /*  Tenk deg at du har en pose med 7 godteri, og du vil dele dem likt mellom 5 venner. 
+        Hver venn kan ikke få nøyaktig samme antall godteri, så du må dele dem så likt som 
+        mulig. Når du deler godteriene på vennene dine, vil hver venn få 1 godteri, 
+        men det vil være 2 godteri igjen. Denne koden hjelper deg med å finne ut hvor mange 
+        godteri som er igjen etter at du har delt dem så likt som mulig mellom vennene dine. 
+        Så det er akkurat det denne koden gjør - den finner ut hva som er igjen etter at du har delt et tall på et annet tall, og gir deg svaret.*/
+
+/*  1: Divede the divedend (first number ) by the divisor (second number) 
+    2: Disregard the the fraction in the result
+    3: multiply the result (quotient) by the divisor (second number)
+    4: substract the new result from the divedent (first number)
+    
+    Let's use the numbers 45 (dividend) and 7 (divisor) as an example for the provided steps:
+
+    Divide the dividend (45) by the divisor (7).
+    45 ÷ 7 = 6.428571 (approximately)
+
+    Disregard the fraction in the result, which leaves us with 6.
+
+    Multiply the result (quotient) by the divisor (second number).
+    6 * 7 = 42
+
+    Subtract the new result from the dividend (first number).
+    45 - 42 = 3
+
+    In this example, after dividing 45 by 7, disregarding the fraction, 
+    multiplying the result by 7, and subtracting the new result from the original dividend,
+    we are left with a remainder of 3. */
+
+    function minusminus() public view returns (uint) {
+        uint a = 7;
+        uint b = 5;
+        uint result = a--; // gir deg a minus 1 eller ++ gir deg en ekstra
+        return result;
+    }
+
+//  Excersise    
+// a = 2 b = 12
+// a + b - b + a = 4
+// a * b * b - 1 = 288
+// b + b++ + a++ = 28
+// (b % a) + 3 = 5
+// b = 12, a = 2, how many times can 12 go in 2, 0 which would be 0 + 3 = 3
+// Imagine you have 12 candies and you want to share them equally between 2 friends. 
+// Each friend will get 6 candies and there will be no candies left. 
+// Now, imagine you found 3 more candies. You would now have a total of 3 candies.
+
+
+
+
+
+}
